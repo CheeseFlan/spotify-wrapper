@@ -1,6 +1,3 @@
-// getAlbum
-// getAlbumTracks
-
 import chai, { expect } from 'chai';
 import { getAlbum, getAlbums, getAlbumTracks } from '../src/album';
 import sinon from 'sinon';
@@ -46,11 +43,11 @@ describe('Album', () => {
     it('should call fetch with the correct URL', () => {
       const album = getAlbum('4aawyAB9vmqN3uQ7FjRGTy');
       expect(stubedFetch).to.have.been
-        .calledWith("https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy");
+        .calledWith('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy');
 
       const album2 = getAlbum('4aawyAB9vmqN3uQ7FjRGTk');
       expect(stubedFetch).to.have.been
-        .calledWith("https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTk")
+        .calledWith('https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTk')
     });
     // verifica se o dado é recebido pela promise
     it('should retrun the correct data from promise', () => {
