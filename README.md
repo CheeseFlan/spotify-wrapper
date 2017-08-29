@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/CheeseFlan/spotify-wrapper.svg?branch=master)](https://travis-ci.org/CheeseFlan/spotify-wrapper)
 
+[![Coverage Status](https://coveralls.io/repos/github/CheeseFlan/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/CheeseFlan/spotify-wrapper?branch=master)
+
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
 ## Browser Support
